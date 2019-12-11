@@ -6,9 +6,8 @@ class PoemDAO:
         host="localhost",
         user="root",
         password="",
-        #user="datarep",  # this is the user name on my mac
-        #passwd="password" # for my mac
-        database="datarepresentation"
+        # DB is poetry; Table is poems
+        database="poetry"
         )
     
             
