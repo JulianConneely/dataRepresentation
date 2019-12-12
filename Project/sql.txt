@@ -1,0 +1,63 @@
+Enter password: *********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.14 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| employees          |
+| garage             |
+| information_schema |
+| lab1               |
+| mysql              |
+| performance_schema |
+| poetry             |
+| sakila             |
+| school             |
+| sys                |
+| world              |
++--------------------+
+11 rows in set (0.01 sec)
+
+mysql> use poetry;
+Database changed
+mysql> create table poems(
+    -> id int NOT NULL AUTO_INCREMENT,
+    -> title varchar(250),
+    -> author varchar(250),
+    -> price int,
+    -> PRIMARY KEY(id)
+    -> )
+    -> ;
+Query OK, 0 rows affected (0.24 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_poetry |
++------------------+
+| poems            |
++------------------+
+1 row in set (0.06 sec)
+
+mysql> desc poems;
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int(11)      | NO   | PRI | NULL    | auto_increment |
+| title  | varchar(250) | YES  |     | NULL    |                |
+| author | varchar(250) | YES  |     | NULL    |                |
+| price  | int(11)      | YES  |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+4 rows in set (0.02 sec)
+
+mysql>
