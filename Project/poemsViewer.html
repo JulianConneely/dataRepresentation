@@ -57,9 +57,9 @@
         document.getElementById('doCreateButton').style.display="none"
         document.getElementById('doUpdateButton').style.display="block"
         var rowElement = buttonElement.parentNode.parentNode
-        // these is a way of finding the closest <tr> which would safer, closest()
         
-        var poems = getpoemsFromRow(rowElement)
+        
+        var poems = getPoemsFromRow(rowElement)
         populateFormWithpoems(poems)
     }
     function doCreate(){
@@ -136,7 +136,7 @@
         form.querySelector('input[name="Price"]').value= poems.Price
         return poems
     }
-    function getpoemsFromForm(){
+    function getPoemsFromForm(){
         var form = document.getElementById('createUpdateForm')
         var poems = {}
         poems.id = form.querySelector('input[name="id"]').value
