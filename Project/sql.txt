@@ -60,4 +60,37 @@ mysql> desc poems;
 +--------+--------------+------+-----+---------+----------------+
 4 rows in set (0.02 sec)
 
+mysql> create table novels(
+    -> id int NOT NULL AUTO_INCREMENT,
+    -> title varchar(200),
+    -> author varchar(200),
+    -> published int,
+    -> PRIMARY KEY(id)
+    ->
+    -> )
+    -> ;
+Query OK, 0 rows affected (0.17 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_poetry |
++------------------+
+| novels           |
+| poems            |
++------------------+
+2 rows in set (0.01 sec)
+
+mysql> desc novels;
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| id        | int(11)      | NO   | PRI | NULL    | auto_increment |
+| title     | varchar(200) | YES  |     | NULL    |                |
+| author    | varchar(200) | YES  |     | NULL    |                |
+| published | int(11)      | YES  |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+mysql>
+
 mysql>
