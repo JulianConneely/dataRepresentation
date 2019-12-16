@@ -91,6 +91,19 @@ mysql> desc novels;
 +-----------+--------------+------+-----+---------+----------------+
 4 rows in set (0.01 sec)
 
-mysql>
+mysql> select * from novels;
+Empty set (0.05 sec)
+
+mysql> select * from poems;
++----+--------------------+-----------------------+----------+
+| id | title              | author                | price    |
++----+--------------------+-----------------------+----------+
+|  1 | Daffodils          | William Wordsworth    |     1000 |
+|  3 | Invictus           | William Ernest Henley | 44553456 |
+|  5 | The Listeners      | Walter De La Mere     |   125000 |
+|  6 | Mirror in February | Patrick Kavanagh      |   124899 |
+|  9 | newone             | me                    |      123 |
++----+--------------------+-----------------------+----------+
+5 rows in set (0.00 sec)
 
 mysql>
