@@ -5,7 +5,9 @@ Python Anywhere: http://jconneely.pythonanywhere.com/
 Username:jc
 Password:DataRep
 
-It is currently working correctly locally (not hosted) and all project files are under the Project folder: 
+It is currently working correctly locally (not hosted) and all project files are under the Project folder.
+
+https://github.com/JulianConneely/deploytoPythonAnywhere is the repository I cloned to Python Anywhere and attempted to get hosted.
 
 
 
