@@ -5,6 +5,11 @@ from flask_cors import CORS
 app = Flask(__name__, static_url_path='', static_folder='.')
 CORS(app)
 
+@app.route('/')
+def index():
+    return "Hey my poems DB server is running now"
+CORS(app)
+
 #curl "http://127.0.0.1:5000/poems"
 @app.route('/poems')
 def getAll():
